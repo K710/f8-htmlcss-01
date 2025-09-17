@@ -92,6 +92,10 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://k710.github.io/popzy/popzy.min.css"
+        />
     </head>
     <body>
         <header class="fixed-header">
@@ -132,7 +136,9 @@
                             hit the mass market! HOT FORECLOSURE DEALS with one
                             simple search.
                         </p>
-                        <a href="#!" class="btn hero-cta">More About Us</a>
+                        <a href="#!" class="btn hero-cta" id="more-about-us-btn"
+                            >More About Us</a
+                        >
                     </div>
 
                     <img
@@ -676,5 +682,25 @@
                 </div>
             </div>
         </footer>
+        <template id="more-about-us">
+            <h1>New content</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorum, ipsam officiis repellat maiores laborum reprehenderit
+                aliquam sed perferendis placeat similique, tempora consequatur,
+                in cum expedita non voluptas impedit quibusdam delectus!
+            </p>
+        </template>
+        <script src="https://k710.github.io/popzy/popzy.min.js"></script>
+        <script>
+            const moreAboutUs = document.querySelector("#more-about-us-btn");
+            const moreAboutUsModal = new Popzy({
+                templateId: "more-about-us",
+            });
+
+            moreAboutUs.onclick = () => {
+                moreAboutUsModal.open();
+            };
+        </script>
     </body>
 </html>
