@@ -1,0 +1,239 @@
+/* PC */
+
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 991.98px) {
+    .logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .cancel-btn {
+        display: none;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+    .navbar {
+        position: relative;
+    }
+
+    .toggle-menu {
+        width: 24px;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s ease;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        z-index: 2;
+        padding: 60px;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+    }
+
+    .menu-drawer ul {
+        margin-top: 30px;
+    }
+
+    .menu-drawer ul li a {
+        display: block;
+        padding: 14px 0;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-wrap .info {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hero-wrap .info .desc {
+        width: 80%;
+        margin: 30px auto auto auto;
+    }
+
+    .clients .images {
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 30px;
+        row-gap: 20px;
+    }
+
+    .clients .content {
+        margin: auto;
+        padding: 0 20px;
+        width: 90%;
+    }
+
+    .guide-item {
+        margin: 0;
+        flex: 1;
+    }
+
+    .feature .list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stats .row {
+        flex-direction: column;
+    }
+
+    .stats .img-block,
+    .stats .info {
+        width: 100%;
+    }
+
+    .stats .img-block {
+        margin-top: 50px;
+        order: 2;
+    }
+    .stats .info {
+        padding: 0 20px;
+        order: 1;
+    }
+
+    .stats .info .sub-title,
+    .stats .info .desc {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .stats .row-qty {
+        flex-direction: row;
+    }
+
+    .stats .qty-item .qty {
+        font-size: 5rem;
+    }
+
+    .Subscription img {
+        display: none;
+    }
+
+    /* .footer {
+        padding: 0;
+    } */
+
+    .footer .row-top {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+    .actions {
+        display: none;
+    }
+
+    .logo-heading {
+        display: flex;
+    }
+
+    .cancel-btn {
+        margin-left: auto;
+        width: 24px;
+    }
+
+    .menu-drawer {
+        inset: 0 25% 0 0;
+        padding: 40px;
+    }
+
+    .feature .list {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .row-top {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .footer {
+        padding: 0;
+    }
+
+    .stats {
+        padding: 0;
+    }
+
+    .stats .row-qty {
+        margin: 30px;
+        padding: 50px 0 0 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .row-qty .qty-item {
+        flex: 1;
+    }
+
+    .stats .img-block .image {
+        width: 100%;
+    }
+
+    .stats-trend {
+        padding: 20px;
+        left: -20px;
+        top: -50px;
+        border: 1px solid black;
+        border-radius: 12px;
+    }
+
+    .stats .info {
+        padding-bottom: 30px;
+    }
+
+    .copyright {
+        text-align: right;
+    }
+
+    .footer .row-bottom {
+        margin: 50px 0;
+    }
+}

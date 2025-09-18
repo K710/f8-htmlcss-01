@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+header {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --primary-color: #0f1b4c;
 }
@@ -57,6 +62,7 @@ a {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
 /* ============== Header ================== */
 
 .fixed-header {
@@ -65,8 +71,6 @@ a {
     position: sticky;
     top: 0;
     z-index: 1;
-    margin: 0;
-    width: 100%;
 }
 
 .hero-wrap {
@@ -315,7 +319,8 @@ a {
 }
 
 .feature .list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 70px;
     gap: 30px;
 }
@@ -592,7 +597,7 @@ a {
 }
 
 .footer .row-top {
-    gap: 185px;
+    column-gap: 185px;
 }
 
 .footer .heading {
