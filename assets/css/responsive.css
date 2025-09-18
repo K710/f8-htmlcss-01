@@ -186,6 +186,34 @@
         padding: 40px;
     }
 
+    .hero-wrap {
+        height: 100%;
+        padding: 20px 0;
+    }
+
+    .hero-wrap .info .desc {
+        width: 100%;
+    }
+
+    .feature {
+        padding: 50px 0;
+    }
+    .feature .sub-title {
+        font-size: 3.3rem;
+    }
+    .feature .row {
+        flex-wrap: wrap;
+    }
+
+    .feature .link {
+        margin-top: 30px;
+        display: block;
+    }
+
+    .feature .desc {
+        margin-top: 10px;
+    }
+
     .feature .list {
         grid-template-columns: 1fr;
     }
